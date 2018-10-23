@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
+  get 'site/home'
   get 'site/findClinics'
   get 'site/highVisibility'
   get 'site/lovedOnes'
   get 'site/notifications'
-  get 'site/home'
 
   root 'site#home'
 

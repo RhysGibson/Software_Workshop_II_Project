@@ -1,3 +1,23 @@
+
+<div class="topnav">
+  <a><i class="fa fa-ambulance" style="font-size:120%"></i><i class="fa fa-heart" style="font-size:120%"></i></a>
+  <a href="/site/home.html.erb">Home</a>
+  <a href="#records">Records</a>
+  <a href="#prescriptions">Prescriptions</a>
+  <%= link_to "Clinics", site_findClinics_path %><a href="/">Clinics</a>
+  <a href="#support">Support</a>
+  <a href="#feedback">Feedback</a>
+  <a href="#account">Account</a>
+  <a><i class="fa fa-microphone" style="font-size:120%"></i></a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+
+<div class="body">
 <h1>Welcome to our system</h1>
 <p>We are happy to help with any of your needs</p>
 
@@ -6,4 +26,6 @@
 <%= link_to "High Visibility", site_highVisibility_path %>
 <%= link_to "Loved Ones", site_lovedOnes_path %>
 <%= link_to "Notifications", site_notifications_path %>
- 
+</div>
+
+</body>
