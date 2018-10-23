@@ -19,17 +19,24 @@
 </div>
 
 <div class="bodyImage">
-  <!--From https://www.cushmancreative.com/biotech-branding-designing-a-positive-online-experience-for-patients/-->
-  <%= image_tag ("happyFam.jpg")%>
+  <!-- From https://www.cushmancreative.com/biotech-branding-designing-a-positive-online-experience-for-patients/ -->
+  <%= image_tag("happyFam.jpg", :alt => "Happy Family", :height => "20%", :width => "40%")%>
 </div>
 
-<div class="body">
-    <h1>Welcome to our system</h1>
-    <p>We are happy to help with any of your needs</p>
+<div class="mainContent">
+    <p>Helping families all over Australia by making their lives that much easier</p>
 
-    <br>
-    <%= link_to "Find Clinics", site_findClinics_path %>
-    <%= link_to "High Visibility", site_highVisibility_path %>
-    <%= link_to "Loved Ones", site_lovedOnes_path %>
-    <%= link_to "Notifications", site_notifications_path %>
+    <div class="option1">
+      <p>Personal Records</p>
+    </div>
+
+    <div class="option2">
+      <p>Feedback on System</p>
+    </div>
+
+    <div class="option3">
+      <p>Account Help</p>
+      <br>
+      <br>
+    </div>
 </div>
