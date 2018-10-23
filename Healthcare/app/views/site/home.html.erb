@@ -9,6 +9,7 @@
   <a href="#feedback">Feedback</a>
   <a href="#account">Account</a>
   <a><i class="fa fa-microphone" style="font-size:120%"></i></a>
+
   <div class="search-container">
     <form action="/action_page.php">
       <input type="text" placeholder="Search.." name="search">
@@ -17,15 +18,18 @@
   </div>
 </div>
 
-<div class="body">
-<h1>Welcome to our system</h1>
-<p>We are happy to help with any of your needs</p>
-
-<br>
-<%= link_to "Find Clinics", site_findClinics_path %>
-<%= link_to "High Visibility", site_highVisibility_path %>
-<%= link_to "Loved Ones", site_lovedOnes_path %>
-<%= link_to "Notifications", site_notifications_path %>
+<div class="bodyImage">
+  <!--From https://www.cushmancreative.com/biotech-branding-designing-a-positive-online-experience-for-patients/-->
+  <%= image_tag ("happyFam.jpg")%>
 </div>
 
-</body>
+<div class="body">
+    <h1>Welcome to our system</h1>
+    <p>We are happy to help with any of your needs</p>
+
+    <br>
+    <%= link_to "Find Clinics", site_findClinics_path %>
+    <%= link_to "High Visibility", site_highVisibility_path %>
+    <%= link_to "Loved Ones", site_lovedOnes_path %>
+    <%= link_to "Notifications", site_notifications_path %>
+</div>
