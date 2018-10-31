@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'site/highVisibility'
   get 'site/lovedOnes'
   get 'site/notifications'
+  get 'site/feedback'
 
   root 'site#home'
 
