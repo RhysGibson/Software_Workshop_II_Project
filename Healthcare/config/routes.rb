@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'site/feedback'
   get 'site/records'
   get 'site/accountSupport'
+  get 'site/prescriptions'
 
   root 'site#home'
 

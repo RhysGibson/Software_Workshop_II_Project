@@ -1,13 +1,26 @@
-<div class="topnav">
-  <a><i class="fa fa-ambulance" style="font-size:120%"></i><i class="fa fa-heart" style="font-size:120%"></i></a>
-  <a style="padding-left: 80px"></a>
+
+
+<div class="navbar">
+  <a><i class="fa fa-ambulance" style="font-size:130%"></i><i class="fa fa-heart" style="font-size:130%"></i></a>
+  <a style="padding-left: 70px"></a>
   <%= link_to "Home", root_path %>
   <%= link_to "Records", site_records_path %>
-  <a href="#prescriptions">Prescriptions</a>
+  <%= link_to "Prescriptions", site_prescriptions_path %>
   <%= link_to "Clinics", site_findClinics_path %>
   <%= link_to "Support", site_accountSupport_path %>
   <%= link_to "Feedback", site_feedback_path %>
   <a href="#account">Account</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <%= link_to "High Visibility", site_highVisibility_path %>
+      <%= link_to "Loved Ones", site_lovedOnes_path %>
+      <%= link_to "Notifications", site_notifications_path %>
+    </div>
+  </div>
+
   <a><i class="fa fa-microphone" style="font-size:120%"></i></a>
 
   <div class="search-container">
