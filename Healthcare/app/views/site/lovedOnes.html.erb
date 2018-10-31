@@ -1,2 +1,19 @@
-<h1>Site#lovedOnes</h1>
-<p>Find me in app/views/site/lovedOnes.html.erb</p>
+<div class="topnav">
+  <a><i class="fa fa-ambulance" style="font-size:120%"></i><i class="fa fa-heart" style="font-size:120%"></i></a>
+  <a style="padding-left: 80px"></a>
+  <%= link_to "Home", root_path %>
+  <%= link_to "Records", site_records_path %>
+  <a href="#prescriptions">Prescriptions</a>
+  <%= link_to "Clinics", site_findClinics_path %>
+  <%= link_to "Support", site_accountSupport_path %>
+  <%= link_to "Feedback", site_feedback_path %>
+  <a href="#account">Account</a>
+  <a><i class="fa fa-microphone" style="font-size:120%"></i></a>
+
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>

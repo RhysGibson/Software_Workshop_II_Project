@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   get 'site/lovedOnes'
   get 'site/notifications'
   get 'site/feedback'
+  get 'site/records'
+  get 'site/accountSupport'
 
   root 'site#home'
 

@@ -1,11 +1,12 @@
 
 <div class="topnav">
   <a><i class="fa fa-ambulance" style="font-size:120%"></i><i class="fa fa-heart" style="font-size:120%"></i></a>
-  <a style="padding-left: 125px" href="/site/home.html.erb">Home</a>
-  <a href="#records">Records</a>
+  <a style="padding-left: 80px"></a>
+  <%= link_to "Home", root_path %>
+  <%= link_to "Records", site_records_path %>
   <a href="#prescriptions">Prescriptions</a>
   <%= link_to "Clinics", site_findClinics_path %>
-  <a href="#support">Support</a>
+  <%= link_to "Support", site_accountSupport_path %>
   <%= link_to "Feedback", site_feedback_path %>
   <a href="#account">Account</a>
   <a><i class="fa fa-microphone" style="font-size:120%"></i></a>
@@ -34,16 +35,23 @@
     <p>Helping families all over Australia by making their lives that much easier</p>
 
     <div class="option1">
-      <p>Personal Records</p>
-    </div>
+      <%= image_tag("Records.jpg", :alt => "Records", :class => "overlayImg")%>
+      <div class="overlay">
+        <div class="overlayText"><%= link_to "Records", site_records_path %></div>
+      </div>
+   </div>
 
     <div class="option2">
-      <p>Feedback on System</p>
+      <%= image_tag("feedback.jpg", :alt => "Feedback", :class => "overlayImg")%>
+      <div class="overlay">
+        <div class="overlayText"><%= link_to "Feedback", site_feedback_path %></div>
+      </div>
     </div>
 
     <div class="option3">
-      <p>Account Help</p>
-      <br>
-      <br>
+      <%= image_tag("accountSupport.png", :alt => "Account Support", :class => "overlayImg")%>
+      <div class="overlay">
+        <div class="overlayText"><%= link_to "Account Support", site_accountSupport_path %></div>
+      </div>
     </div>
 </div>
