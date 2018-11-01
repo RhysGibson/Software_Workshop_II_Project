@@ -7,6 +7,7 @@ class SiteController < ApplicationController
     @hash = Gmaps4rails.build_markers(@clinics) do |clinics, marker|
       marker.lat clinics.latitude
       marker.lng clinics.longitude
+      marker.infowindow clinics.name
     end
   end
 end

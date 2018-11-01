@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'site/accountSupport'
   get 'site/prescriptions'
 
+  #if adding to databases comment out this root and uncomment which one you are working with
   root 'site#home'
 
   #Easy way to add to Clinics database

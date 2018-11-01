@@ -8,6 +8,7 @@ class ClinicsController < ApplicationController
     @hash = Gmaps4rails.build_markers(@clinics) do |clinics, marker|
       marker.lat clinics.latitude
       marker.lng clinics.longitude
+      marker.infowindow clinics.name
     end
   end
 
@@ -73,6 +74,6 @@ class ClinicsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def clinic_params
-      params.require(:clinic).permit(:latitude, :longitude, :name, :address)
+      params.require(:clinic).permit(:latitude, :longitude, :name, :address, :doctors)
     end
 end
