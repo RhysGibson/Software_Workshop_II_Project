@@ -64,3 +64,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #Google maps
 gem 'gmaps4rails'
+
+#password stuff
+gem 'bcrypt', '3.1.12'
