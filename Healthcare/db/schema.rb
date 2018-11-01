@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_23_001237) do
+ActiveRecord::Schema.define(version: 2018_10_31_234231) do
+
+  create_table "clinics", force: :cascade do |t|
+    t.float "latitude"
+    t.float "longitude"
+    t.string "name"
+    t.string "address"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "posts", force: :cascade do |t|
     t.string "title"
