@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  like: MyString
+  dislike: MyString
+  improve: MyString
+  rating: 1
+
+two:
+  like: MyString
+  dislike: MyString
+  improve: MyString
+  rating: 1

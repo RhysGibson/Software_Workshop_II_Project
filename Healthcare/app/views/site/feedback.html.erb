@@ -33,3 +33,9 @@
     </form>
   </div>
 </div>
+
+<% if logged_in? %>
+<p>Welcome <%= current_user.name %></p>
+<% else %>
+<p>Please sign in first before giving feedback</p>
+<% end %>

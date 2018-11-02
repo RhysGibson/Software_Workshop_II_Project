@@ -11,4 +11,9 @@ class SiteController < ApplicationController
       marker.infowindow clinicsInfo
     end
   end
+
+  def feedbacks
+    @feedbacks = Feedback.all
+  end
+
 end

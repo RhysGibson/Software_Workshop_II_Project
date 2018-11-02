@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_01_053235) do
+ActiveRecord::Schema.define(version: 2018_11_02_014633) do
 
   create_table "clinics", force: :cascade do |t|
     t.float "latitude"
@@ -23,9 +23,11 @@ ActiveRecord::Schema.define(version: 2018_11_01_053235) do
     t.string "hours"
   end
 
-  create_table "posts", force: :cascade do |t|
-    t.string "title"
-    t.text "body"
+  create_table "feedbacks", force: :cascade do |t|
+    t.string "like"
+    t.string "dislike"
+    t.string "improve"
+    t.integer "rating"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
