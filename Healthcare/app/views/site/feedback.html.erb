@@ -1,5 +1,3 @@
-
-
 <div class="navbar">
   <a><i class="fa fa-ambulance" style="font-size:130%"></i><i class="fa fa-heart" style="font-size:130%"></i></a>
   <a style="padding-left: 70px"></a>
@@ -18,6 +16,11 @@
       <%= link_to "High Visibility", site_highVisibility_path %>
       <%= link_to "Loved Ones", site_lovedOnes_path %>
       <%= link_to "Notifications", site_notifications_path %>
+      <% if logged_in? %>
+      <%= link_to "Log Out", logout_path, method: :delete %>
+      <% else %>
+      <%= link_to "Log In", login_path %>
+      <% end %>
     </div>
   </div>
 
