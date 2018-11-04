@@ -8,4 +8,7 @@ Currently only two users have been implemented;
 test@example.com        testing
 a1725098@example.com    testing
 
+The users can be logged in and out, and as demonstrated on the feedback page, the site will remember which user is signed in using sessions.
+
+
 On the clinics page, if the map doesn't load first time reload the page manually and it should then show up
